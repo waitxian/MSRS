@@ -35,8 +35,7 @@ python get_svd_rank.py --dataset_type truthful_and_bbq --model_name /path/to/you
 python get_svd_rank.py --dataset_type alpaca_and_refusal --model_name /path/to/your/model --alpaca_path /path/to/Alpaca_activations.npy --refusal_path /path/to/Refusal_activations.npy
 
 # Example for HelpSteer activations
-python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model --helpful_path /path/to/Helpfulness_activations.npy --coher_path /path/to/Coherence_activations.npy --verb_path /path/to/Verbosity_activations.npyArguments:
---dataset_type: Type of dataset being used (same as in Step 1).
+python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model --helpful_path /path/to/Helpfulness_activations.npy --coher_path /path/to/Coherence_activations.npy --verb_path /path/to/Verbosity_activations.npy
 ```
 
 * **Step 3: Train MSRS**
