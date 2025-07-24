@@ -1,4 +1,5 @@
 * **Step 1: Obtain Model Activations**
+
   Run the following command to extract the activations for a given dataset:
 
 ```
@@ -13,6 +14,7 @@ python get_activations.py --dataset_type helpsteer --model_name /path/to/your/mo
 ```
 
 * **Step 2: Perform SVD Decomposition on Activations**
+
   After you have obtained the activations, run the following command to perform SVD on the activations:
 
 ```
@@ -28,6 +30,7 @@ python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model
 ```
 
 * **Step 3: Train MSRS**
+
   In this step, we use three different scripts depending on the dataset you are working with:
 
 `truthful_and_bbq.sh`: For fine-tuning with the TruthfulQA and BBQ datasets.
