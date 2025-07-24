@@ -27,7 +27,7 @@ python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model
 --dataset_type: Type of dataset being used (same as in Step 1).
 ```
 
-* **Step 3: Train MSRS **
+* **Step 3: Train MSRS**
   In this step, we use three different scripts depending on the dataset you are working with:
 
 `truthful_and_bbq.sh`: For fine-tuning with the TruthfulQA and BBQ datasets.
