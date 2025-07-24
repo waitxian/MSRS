@@ -38,7 +38,7 @@ python get_svd_rank.py --dataset_type alpaca_and_refusal --model_name /path/to/y
 python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model --helpful_path /path/to/Helpfulness_activations.npy --coher_path /path/to/Coherence_activations.npy --verb_path /path/to/Verbosity_activations.npy
 ```
 
-* **Step 3: Train MSRS**
+* **Step 3: Run MSRS**
 
   In this step, we use three different scripts depending on the dataset you are working with:
 
