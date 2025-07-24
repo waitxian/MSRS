@@ -1,3 +1,13 @@
+* **Environments**
+
+```
+conda create -n test python=3.10
+git clone https://github.com/waitxian/MSRS.git
+pip install -r requiremnets.txt
+pip install pyreft einops 
+pip install git+https://github.com/davidbau/baukit
+```
+
 * **Step 1: Obtain Model Activations**
 
   Run the following command to extract the activations for a given dataset:
