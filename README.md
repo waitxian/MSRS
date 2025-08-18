@@ -3,7 +3,7 @@
 ```
 conda create -n test python=3.10
 git clone https://github.com/waitxian/MSRS.git
-pip install -r requiremnets.txt
+pip install -r requirements.txt
 pip install pyreft einops 
 pip install git+https://github.com/davidbau/baukit
 ```
