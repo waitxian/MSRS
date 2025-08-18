@@ -35,7 +35,7 @@ python get_svd_rank.py --dataset_type truthful_and_bbq --model_name /path/to/you
 python get_svd_rank.py --dataset_type alpaca_and_refusal --model_name /path/to/your/model --alpaca_path /path/to/{args.model_name}_alpaca_layer_wise.npy --refusal_path {args.model_name}_refusal_layer_wise.npy
 
 # Example for HelpSteer activations
-python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model --helpful_path /path/to/{args.model_name}_helpfulness_layer_wise.npy --coher_path /path/to/{args.model_name}_coherence_layer_wise.npy --verb_path /path/to/{args.model_name}_verbosity_layer_wise.npy
+python get_svd_rank.py --dataset_type helpsteer --model_name /path/to/your/model --helpful_path /path/to/{model_name}_helpfulness_layer_wise.npy --coher_path /path/to/{model_name}_coherence_layer_wise.npy --verb_path /path/to/{model_name}_verbosity_layer_wise.npy
 ```
 
 * **Step 3: Run MSRS**
