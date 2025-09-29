@@ -67,16 +67,13 @@ def load_triviaqa():
     return df
 
 def format_truthfulqa_DRC(question, choice):
-    return f"### Instruction:\n请你对下面的语句作出回复：\n\n### Input:\n{question}\n\n### Response:\n以下是我对该语句的回复：\n{choice}"
-   
+    return f"### Instruction:\nPlease respond to the following statement:\n\n### Input:\n{question}\n\n### Response:\nHere is my response to the statement:\n{choice}"
 
 def format_truthfulqa_Shakespeare(question, choice):
     return f"Please respond to the following statement, and do not output any unnecessary content: \n{question}\nOkay, my answer is as follows:\n{choice}"
 
-def format_truthfulqa_end_q(question, choice, rand_question): 
-    # return f"### Instruction:\n请你对下面的语句作出回复：\n\n### Input:\n{question}\n\n### Response:\n以下是我对该语句的回复：\n{choice}\n\n### Instruction:\n请你对下面的语句作出回复：\n\n### Input:\n{rand_question}"
+def format_truthfulqa_end_q(question, choice, rand_question):
     return f"Please respond to the following statement, and do not output any unnecessary content: \n{question}\nOkay, my answer is as follows:\n{choice}"
-
 def tokenized_tqa(dataset, tokenizer): 
 
     all_prompts = []
